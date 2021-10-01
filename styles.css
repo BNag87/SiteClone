@@ -1,0 +1,246 @@
+/* Set up page to ensure all elements appear the same size*/
+html{
+    box-sizing: border-box;
+}
+
+/* Make every element inherit sizing already specified */
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: white;
+    font-family: sans-serif;
+    margin: 0;
+
+}
+
+#arrFIRSTimg, #arrLEFTimg, #arrRANDimg, #arrRIGHTimg, #arrLASTimg{
+    width: 91px;
+    height: 91px;
+}
+
+#patreonImage, #shortImage, #podcastImage{
+    width: 290px;
+
+}
+
+h3{
+    color:darkslateblue;
+}
+
+/* ========================================NAVBAR STUFF============================================== */
+.wrapper{
+    margin: 0;
+    padding: 0;
+    background-color: darkcyan;
+}
+/* Just to change the font colour in the navbar */
+.navbar{
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: whitesmoke;
+}
+
+/* Access to only .social li elements in navbar */
+.navbar ul li.social {
+    font-size: 22px;
+}
+
+/* social media hover effect */
+.navbar ul li.social:hover {
+    
+    color:darkgrey;
+}
+
+/* Hover effect for none social li elements in the navbar*/
+.navbar ul li:hover:not(.social) {
+    color: lightgreen;
+    
+}
+
+/* Set the logo to not be colossal */
+#logo{
+    max-width: 300px;
+}
+
+.titleImage{
+    order: -1;
+    flex: 1 0 100%;
+    /* background-color: red; */
+}
+
+.firstList{
+    padding-top: 5px;
+    /* background-color: green; */
+    display: flex;
+}
+
+.firstList li{
+    flex: 1;
+    width: auto;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.firstList li:nth-child(7){
+    width: 200px;
+    white-space: nowrap;
+}
+
+.secondList{
+    /* background-color: red; */
+    display: flex;
+}
+
+.secondList li{
+    flex: 1;
+}
+
+.navMiddleFloat{
+width:50%;
+}
+
+/* Applies to ULs in the navbar */
+.navbar ul {
+    display: flex;
+    list-style:none;
+    font-weight: bolder;
+}
+
+/* General formatting for all list elements in navbar */
+.navbar ul li{
+ padding:5px;
+}
+/* ========================================GRAND WRAPPER STUFF============================================== */
+.grandWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ========================================MAIN BODY LEFT STUFF============================================== */
+.mainBodyWrapperLEFT{
+    /* this wrapper is a child of grandWrapper. its children are:
+        mainBody, mainNews, mainStore, mainShorts*/
+    order: 1;
+    flex-direction: row;
+    flex-basis: 69%;
+    padding: 5px;
+    background-color: white;
+    max-width: 1160px;
+}
+
+/* for nav buttons underneath any comic */
+.navButtons{
+    flex:1;
+    order:2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* container for comics */
+.mainBody{
+    flex: 1;
+    order: 1;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+/* this is the container for all divs in the left section of the page */
+.newsleft{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5px;
+
+}
+
+.newsBoxHead{
+
+    width: 10%;
+    text-align: center;
+}
+
+.newsSpacer{
+    width: 80%;
+}
+
+.newsRightHeader{
+    
+    width: 10%;
+    text-align: center;
+}
+.newsBox{
+    
+    border: 2px solid #CCCCCC;
+    border-radius: 7px;
+    padding: 10px;
+    width:50%
+}
+
+.mainShorts{
+    text-align: center;
+    border: 2px solid #CCCCCC;
+    border-radius: 7px;
+    padding: 10px; 
+}
+
+.mainStore img{
+    width: auto;
+}
+
+.newsRight{
+    
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    border-color: lightgray;
+    padding: 5px;
+    /* width: 35%; */
+}
+/* container for news */
+.mainNews{
+    order: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    border-color: lightgray;
+
+    width: 40%;
+
+    background: #F2F2F2;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* ========================================MAIN BODY RIGHT STUFF============================================== */
+
+.mainBodyWrapperRIGHT{
+    /* this wrapper is a child of grandWrapper. its children are:
+        podcastAD, patreonAD*/
+    display: flex;
+    order:2;
+    flex-direction: column;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.sideVideAd{
+
+    background: #F2F2F2;
+    border-radius: 7px;
+    font-weight: bold;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* ========================================FOOTER STUFF============================================== */
+
+.footerWrapper{
+    background-color: darkcyan; 
+}
